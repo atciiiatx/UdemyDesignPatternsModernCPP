@@ -1,2 +1,0 @@
-0: I ate a bug.
-1: I went swimmming.
