@@ -31,11 +31,14 @@ struct PersistenceManager
 
 int main()
 {
+    std::cout << "SingleResponsibility" << std::endl;
+
     Journal journal("My Diary");
     journal.AddEntry("I ate a bug.");
     journal.AddEntry("I went swimmming.");
 
     PersistenceManager pm;
     pm.Save(journal, "journal.txt");
+    std::cout << "Wrote journal" << std::endl;
     return 0;
 }
